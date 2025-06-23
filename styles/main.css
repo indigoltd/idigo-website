@@ -30,7 +30,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  max-height: 80px; /* 👈 limits how tall the image gets */
+  max-height: 60px; /* 👈 limits how tall the image gets */
   display: block;
   margin: 1rem auto;
   border-radius: 8px;
