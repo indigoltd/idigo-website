@@ -21,3 +21,15 @@
   justify-content: space-between;
   text-align: center;
 }
+.explore-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* 👈 Add this line */
+  padding: 0.6rem 1.4rem;
+  background-color: #005f99;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
