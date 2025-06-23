@@ -1,4 +1,12 @@
 /* styles/main.css */
+.site-logo {
+  width: 160px;      /* Try 200px for even bigger */
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
 .explore-btn {
   display: inline-block;
   margin-top: 1rem;
