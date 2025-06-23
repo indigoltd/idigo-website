@@ -1,4 +1,4 @@
-<script>
+
   document.querySelectorAll('.explore-btn').forEach(btn => {
     btn.addEventListener('click', e => {
       e.preventDefault(); 
@@ -11,4 +11,4 @@
       }
     });
   });
-</script>
+
