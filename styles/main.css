@@ -33,3 +33,7 @@
   font-size: 0.95rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+.service-box {
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+}
