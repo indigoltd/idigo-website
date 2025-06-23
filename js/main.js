@@ -16,6 +16,6 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.job-pic').forEach(pic => {
       pic.classList.add('show');
     });
-  }, 4000); // 4 second delay
+  }, 2000); // 2 second delay
 });
 
