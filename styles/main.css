@@ -30,13 +30,16 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+  max-height: 180px; /* 👈 limits how tall the image gets */
   display: block;
-  margin: 1rem 0;
+  margin: 1rem auto;
   border-radius: 8px;
+  object-fit: cover;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.8s ease;
 }
+
 
 .job-pic.show {
   opacity: 1;
