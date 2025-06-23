@@ -11,4 +11,11 @@
       }
     });
   });
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    document.querySelectorAll('.job-pic').forEach(pic => {
+      pic.classList.add('show');
+    });
+  }, 4000); // 4 second delay
+});
 
