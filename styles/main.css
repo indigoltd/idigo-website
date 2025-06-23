@@ -46,3 +46,62 @@
   transform: translateY(0);
 }
 
+.service-detail {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.hero-banner {
+  background: #eaf3f7;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  align-items: center;
+}
+
+.content-block.alt {
+  flex-direction: row-reverse;
+}
+
+.content-block .text {
+  flex: 1 1 400px;
+}
+
+.feature-img {
+  flex: 1 1 400px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.content-block ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-block li::before {
+  content: "✔️";
+  margin-right: 8px;
+  color: green;
+}
+
+.cta-block {
+  text-align: center;
+  background: #f7fbff;
+  padding: 3rem 2rem;
+}
+
+.cta-block h2 {
+  margin-bottom: 0.5rem;
+}
