@@ -105,3 +105,12 @@
 .cta-block h2 {
   margin-bottom: 0.5rem;
 }
+.job-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 30px auto 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
