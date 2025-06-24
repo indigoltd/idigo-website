@@ -5,8 +5,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
+  
+}
+.header {
   text-align: center;
-
 }
 
 .explore-btn {
