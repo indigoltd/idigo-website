@@ -1,18 +1,7 @@
 /* styles/main.css */
-.site-logo {
-  width: 160px;      /* Try 200px for even bigger */
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: block;
-  
-}
-.header {
-  text-align: center;
-}
 
 .explore-btn {
-  display: inline-block;
+  display: inline-block
   margin-top: 1rem;
   padding: 0.6rem 1.4rem;
   background-color: #005f99;
