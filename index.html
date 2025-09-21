@@ -218,7 +218,24 @@
     <a href="https://g.page/r/Cf8y-YourGMBLink" target="_blank" style="display:inline-block; margin-top:30px; background:#e67e22; color:#fff; padding:12px 25px; border-radius:5px; text-decoration:none; font-weight:bold;">Leave a Review</a>
   </div>
 </section>
+<style>
+/* Review Slider Auto Scroll */
+.review-track.auto-scroll {
+  display: flex;
+  gap: 30px;
+  animation: scrollReviews 25s linear infinite;
+}
 
+@keyframes scrollReviews {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-33.333%); }
+  50% { transform: translateX(-66.666%); }
+  75% { transform: translateX(-100%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+
+added code for reviews
 
   <section id="about" class="about" data-aos="fade-up">
     <h2>About Indigo Drywall Ltd.</h2>
