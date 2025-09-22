@@ -181,67 +181,55 @@
     </p>
     <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-delay="600">Contact Us</a>
   </section>
-<br>
 <section id="reviews" style="padding:80px 20px; background:#f4f6f8; text-align:center;">
   <h2 style="font-size:32px; color:#2c3e50; margin-bottom:50px;">⭐ What Our Clients Say</h2>
 
   <div class="review-slider" style="max-width:900px; margin:auto; overflow:hidden; position:relative;">
-    <div class="review-track" style="display:flex; gap:30px; transition:transform 0.5s ease;">
-      
-      <!-- Review 1 -->
-      <div class="review-card" style="min-width:300px; flex:0 0 auto; background:#fff; padding:30px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
-        <p style="font-size:12px; margin:0 0 10px 0; color:#e67e22;">⭐⭐⭐⭐⭐</p>
-        <p style="color:#34495e; font-size:18px; line-height:1.4; margin-bottom:15px;">
-          “Indigo Drywall did an excellent job in our basement. Professional and on time!”
-        </p>
-        <p style="font-weight:bold; color:#2c3e50; margin:0;">– Nathan P.</p>
-      </div>
+    <div class="review-track" style="display:flex; gap:30px;">
 
-      <!-- Review 2 -->
-      <div class="review-card" style="min-width:300px; flex:0 0 auto; background:#fff; padding:30px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
-        <p style="font-size:12px; margin:0 0 10px 0; color:#e67e22;">⭐⭐⭐⭐⭐</p>
-        <p style="color:#34495e; font-size:18px; line-height:1.4; margin-bottom:15px;">
-          “Very reliable crew, smooth finishing, and reasonable price. Highly recommended.”
-        </p>
-        <p style="font-weight:bold; color:#2c3e50; margin:0;">– Sarah M.</p>
-      </div>
+      <!-- Reviews (original set) -->
+      <div class="review-card">⭐⭐⭐⭐⭐<br>“Indigo Drywall did an excellent job in our basement. Professional and on time!”<br>– Nathan P.</div>
+      <div class="review-card">⭐⭐⭐⭐⭐<br>“Very reliable crew, smooth finishing, and reasonable price. Highly recommended.”<br>– Sarah M.</div>
+      <div class="review-card">⭐⭐⭐⭐⭐<br>“Fast, friendly, and professional. I’ll definitely hire Indigo Drywall again.”<br>– Jason L.</div>
 
-      <!-- Review 3 -->
-      <div class="review-card" style="min-width:300px; flex:0 0 auto; background:#fff; padding:30px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
-        <p style="font-size:5px; margin:0 0 10px 0; color:#e67e22;">⭐⭐⭐⭐⭐</p>
-        <p style="color:#34495e; font-size:8px; line-height:1.4; margin-bottom:15px;">
-          “Fast, friendly, and professional. I’ll definitely hire Indigo Drywall again.”
-        </p>
-        <p style="font-weight:bold; color:#2c3e50; margin:0;">– Jason L.</p>
-      </div>
+      <!-- Duplicate set for smooth looping -->
+      <div class="review-card">⭐⭐⭐⭐⭐<br>“Indigo Drywall did an excellent job in our basement. Professional and on time!”<br>– Nathan P.</div>
+      <div class="review-card">⭐⭐⭐⭐⭐<br>“Very reliable crew, smooth finishing, and reasonable price. Highly recommended.”<br>– Sarah M.</div>
+      <div class="review-card">⭐⭐⭐⭐⭐<br>“Fast, friendly, and professional. I’ll definitely hire Indigo Drywall again.”<br>– Jason L.</div>
 
-      <!-- Add more reviews here if needed -->
     </div>
   </div>
   <a href="https://g.page/r/Cf8y-YourGMBLink" target="_blank" style="display:inline-block; margin-top:30px; background:#e67e22; color:#fff; padding:12px 25px; border-radius:5px; text-decoration:none; font-weight:bold;">Leave a Review</a>
 </section>
 
-<script>
-const track = document.querySelector('.review-track');
-let index = 0;
-const cards = document.querySelectorAll('.review-card');
-const total = cards.length;
-
-// Width of one card + gap
-const cardStyle = getComputedStyle(cards[0]);
-const gap = parseInt(cardStyle.marginRight || 30);
-const cardWidth = cards[0].offsetWidth + gap;
-
-function nextReview() {
-  index++;
-  if(index >= total) index = 0;
-  track.style.transform = `translateX(-${index * cardWidth}px)`;
+<style>
+.review-slider {
+  overflow: hidden;
 }
+.review-track {
+  display: flex;
+  gap: 30px;
+  animation: scrollReviews 8s linear infinite;
+}
+.review-card {
+  min-width:300px;
+  flex:0 0 auto;
+  background:#fff;
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  font-size:18px;
+  line-height:1.4;
+  color:#34495e;
+  text-align:left;
+}
+@keyframes scrollReviews {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* scrolls half of track to loop smoothly */
+}
+</style>
 
-// Fast auto-scroll every 1.5 seconds
-setInterval(nextReview, 1500);
-</script>
-added code for reviews
+
 
   <section id="about" class="about" data-aos="fade-up">
     <h2>About Indigo Drywall Ltd.</h2>
